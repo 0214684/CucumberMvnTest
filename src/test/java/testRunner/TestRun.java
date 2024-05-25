@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 	glue={"stepDefs","Hooks"},
 	dryRun=false,
 	monochrome=true,
-	tags= {"@Smoke","@Regression"},
+	tags= {"@Smoke"},
 	plugin= {"pretty","html:test-output"}
 	)
 
