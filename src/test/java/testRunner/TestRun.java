@@ -7,10 +7,11 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions
 	(
-	features={"calc.feature","print1.feature"},
-	glue="stepDefs",
+	features={"test.feature"},
+	glue={"stepDefs","Hooks"},
 	dryRun=false,
 	monochrome=true,
+	tags= {"@Smoke","@Regression"},
 	plugin= {"pretty","html:test-output"}
 	)
 
